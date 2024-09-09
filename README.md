@@ -23,19 +23,19 @@ To use the project, follow these steps:
 1. Open the browser and navigate to `http://localhost:5000/predict/df`
 2. Add the values for the sepal length, sepal width, petal length, and petal width to url parameters. Example: 
 ```
-http://localhost:5000/predict/df?sepal_length=5.1&sepal_width=3.5&petal_length=1.4&petal_width=0.2
+http://localhost:5000/predict/np?sl=2&sw=1.5&pl=1.0&pw=0.7
 ```
 3. Click the `Enter` button to make a prediction
 4. The predicted species will be displayed on the screen. Example Response: 
 ```json
 {
-"class": "Setosa",
+"class": "Versicolor",
 "code": 200,
 "input": {
-    "petal length": 1,
-    "petal wwidth": 2,
-    "sepal length": 1.2,
-    "sepal width": 3
+    "petal length": 2,
+    "petal wwidth": 1.5,
+    "sepal length": 1.0,
+    "sepal width": 0.7
 },
 "message": "Prediction Successful",
 "model": "DattFrame Model",
